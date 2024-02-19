@@ -16,14 +16,14 @@ if (document.getElementById("mensajeAProcesar").value.length != 0) {
     document.getElementById("mensajeAProcesar").value = textoencriptado;
     titulo.textContent = "Texto encriptado con exito!";
     parrafo.textContent = "";
-    munieco.src = "img/candado.png";
+    munieco.src = "./img/candado.png";
     botoncopiar.style.display = ("flex")
 
 
 } else {
     titulo.textContent = "Ningun mensaje fue encontrado!";
     parrafo.textContent = "Ingresa el texto que deseas encriptar";
-    munieco.src = "img/Muñeco.png";
+    munieco.src = "./img/Muñeco.png";
     botoncopiar.style.display = ("none")
     swal ("oops!", "Debes ingresar un mensaje!", "warning");
 }
@@ -47,13 +47,13 @@ function desencriptar () {
         document.getElementById("mensajeAProcesar").value = textoencriptado;
         titulo.textContent = "Texto desencriptado con exito!";
         parrafo.textContent = "";
-        munieco.src = "img/candado_abierto.png";
+        munieco.src = "./img/candado_abierto.png";
         botoncopiar.style.display = ("flex")
     
     } else {
         titulo.textContent = "Ningun mensaje fue encontrado!";
         parrafo.textContent = "Ingresa el texto que deseas encriptar";
-        munieco.src = "img/Muñeco.png";
+        munieco.src = "./img/Muñeco.png";
         swal ("oops!", "Debes ingresar un mensaje!", "warning");
         botoncopiar.style.display = ("none")
     }
