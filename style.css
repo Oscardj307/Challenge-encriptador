@@ -201,7 +201,7 @@ header img {
 }
 
 footer{
-  background: linear-gradient(#f3f5fc, #ffffff);
+  background:#f3f5fc;
   width: 100%;
   height: 60px;
   font-size: 25px;
@@ -220,12 +220,14 @@ footer{
 .redes img {
   width: 30px;
   margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .descripcion {
   font-weight: 300;
   font-style: italic;
   font-size: medium;
+  padding-bottom: 8px;
 }
 
 @media screen and (max-width:480px) {
