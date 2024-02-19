@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/bloqueado.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de texto</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<header>
+    <img src="img/Logo.png" alt="Logo de Alura">
+</header>
+<body>
+    <main>
+    
+    <section class="section1">
+        <textarea placeholder="Escribe aqui el mensaje" type="textarea" id="mensajeAProcesar" cols="30" rows="10"></textarea>
+        <!-- <p>Solo letras minusculas y sin acento</p> -->
+        <div class="container_btns">
+            <input onclick="encriptar()" type="submit" id="btnEncript" value="Encriptar">
+            <input onclick="desencriptar()" type="submit" id="btnDesencriptar" value="Desencriptar">
+            <input onclick="copiarAlPortapapeles()" type="submit" id="btnCopiar" value="Copiar">
+        </div>
+        
+      
+    </section>
+
+    <section class="section3">
+        <div id="divDelMunieco"  class="container_munieco">
+            <img id ="img_munieco" src="img/Muñeco.png" alt="munieco con lupa">
+        </div>
+        <div class="container_subt">
+            <p id="mensajeResultado"></p>
+            <h3 id="titulo">Nigun mensaje fue encontrado!</h3>
+            <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
+         <!-- <input onclick="copiarAlPortapapeles()" type="submit" id="btnCopiar" value="Copiar"> -->
+        </div>
+        <!-- <div class="container_parrafo"><p>Escriba el texto a encriptar</p></div>  NO SE PARA QUE LO PUSE, VERE DESPUES-->
+
+         
+    </section>
+    <script src="asset.js" defer></script>
+</main>
+
+<footer>
+    <p>Diseñado por Oscar Cortez</p>
+<div class="redes">
+    <a href="https://github.com/Oscardj307"><img src="icons/github.png" alt=""></a>
+    <a href="https://www.linkedin.com/in/oscar-cortez-informatico"><img src="icons/linkedin.png"></a>
+    <p class="descripcion">Challenge encriptador de texto para el proyecto ONE de Alura LATAM y Oracle</p>
+</div>
+</footer>
+</body>
+</html>

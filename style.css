@@ -1,0 +1,306 @@
+/* :root {
+    --bg: #f3f5fc;
+    --color-blue: #0a3871;
+    --color-gray: #495057;
+    --color-gray-light: #d8dfe8;
+    --color-black: #141414;
+} */
+
+/* html,
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  position: relative;
+  margin: 0;
+}  */
+html {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+}
+
+header
+{
+  background: #f3f5fc;
+  width: 100%;
+  height: 60px;
+}
+
+body {
+  background: #f3f5fc;
+}
+
+header img {
+  padding: 5px;
+}
+
+/* body {
+    width: 100%;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    background-color: var(--bg);
+    min-height: 100dvh;
+    flex-direction: column;
+  } */
+
+  main {
+    background: #f3f5fc;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  /* .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+
+  section {
+    border-radius: 30px;
+  }
+
+  .section1 {
+    background: #f3f5fc;
+    width: 60%;
+    margin-left: 20px;
+  }
+
+  textarea{
+    width: 80%;
+    height: 60%;
+    resize: none;
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 30px;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    background: #f3f5fc;
+    /* box-shadow: 3px 3px 5px; */
+  }
+
+  .section3 {
+    background: #ffffff;
+    width: 30%;
+    margin-right: 20px  ;
+    box-shadow: 3px 3px 5px 3px;
+    text-align: center;
+    height: 90%;
+  } 
+
+  .container_munieco{
+    width: 100%;
+    height: 50%;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .container_munieco img {
+    width: 70%;
+  
+  }
+
+  .container_subt{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  #titulo {
+    font-weight: bold;
+    color: #0a3871;
+    font-size: 1.6em;
+    font-style: italic;
+  }
+
+  #parrafo {
+    margin-top: 3%;
+    font-size: 1.1em;
+  }
+
+  .container_subt p {
+    color: gray;
+  }
+
+  .container_parrafo{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    font-size: 15px;
+  } 
+
+  .container_btns {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  #mensajeResultado{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 36px;
+    color: #495057;
+  }
+
+#btnEncript, #btnDesencriptar{
+  width: 30%;
+  height: 40px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 24px;
+  box-shadow: 1px 1px 1px 1px;
+  border: 1px;
+  gap: 8px;
+  margin: 8px;
+}
+
+#btnCopiar {
+  display: none;
+  margin-left: 43%;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 24px;
+  box-shadow: 1px 1px 1px 1px;
+  border: 1px;
+  gap: 8px;
+  width: 13%;
+  height: 35px;
+}
+
+#btnEncript:active, #btnDesencriptar:active, #btnCopiar:active{
+  transform: scale(1.1);
+}
+
+#btnEncript:hover, #btnDesencriptar:hover, #btnCopiar:hover{
+  opacity: 0.5;
+}
+
+#btnEncript {
+  background: #0a3871;
+  color: #ffffff;
+}
+
+#btnDesencriptar {
+  background: #d8dfe8;
+  color: #0A3871;
+}
+
+#btnCopiar{
+  color: #0A3871;
+  background: #d8dfe8;
+  margin-top: 15px;
+}
+
+footer{
+  background: linear-gradient(#f3f5fc, #ffffff);
+  width: 100%;
+  height: 60px;
+  font-size: 25px;
+  text-align: center;
+  box-sizing: border-box;
+  color: #000000;
+  padding-top: 20px;
+  
+}
+
+.redes {
+  display: inline;
+  
+}
+
+.redes img {
+  width: 30px;
+  margin-top: 5px;
+}
+
+.descripcion {
+  font-weight: 300;
+  font-style: italic;
+  font-size: medium;
+}
+
+@media screen and (max-width:480px) {
+body {
+  height: 480px;
+}
+  main {
+    display: block;
+    justify-content: space-between;
+    height: 100%;
+  } 
+  header
+{
+  background: #f3f5fc;
+  width: 100%;
+  height: 50px;
+}
+
+  header img {
+    padding: 2%;
+    width: 20%;
+  }
+  .section1 {
+    margin: 0px;
+    width: 100%;
+  }
+
+  textarea {
+    text-align: center;
+    width: 100%;
+  }
+
+  
+
+
+  #btnEncript, #btnDesencriptar{ 
+    font-size: 15px;
+  }
+  #btnCopiar {
+    font-size: 15px;
+    width: auto;
+  }
+  .section3 {
+    height: 40%;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 8%;
+    display: flex;
+  }
+
+  .container_munieco{
+    width: 100%;
+  }
+
+  .container_munieco img{
+    width: 80%;
+    margin-right: 5%;
+  }
+
+  .container_subt{
+    width: 50%;
+    margin-right: 6%;
+
+  }
+
+  #titulo {
+    font-size: 1.2em;
+  }
+
+  #parrafo {
+    font-size: 15px;
+  }
+
+  footer {
+    margin-top: 50%;
+  }
+
+}
